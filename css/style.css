@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', 'sans-serif';
+}
+body {
+	background-image: url('/assets/bg-default.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 20px;
+}
+.model {
+	display: none;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 30px;
+	background-color: rgba(0, 0, 0, 0.8);
+	backdrop-filter: blur(2px);
+	max-width: 400px;
+	width: 100%;
+	padding: 40px 25px;
+	border-radius: 20px;
+}
+
+.descri-temp {
+	display: none;
+	margin-top: 40px;
+	color: #fff;
+	text-transform: capitalize;
+}
+.descri-temp .temp-in h3 {
+	font-size: 21px;
+}
+.descri-temp .temp-in h3 strong {
+	font-size: 22px;
+	margin-left: 5px;
+	text-shadow: 0 0 2px #ccc;
+}
+.descri-temp div:not(.icon-cloud) {
+	margin-top: 15px;
+}
+.descri-temp span {
+	font-size: 18px;
+	font-weight: 600;
+}
+.content-container .input-camp {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 3px;
+	background-color: #fff;
+	padding: 8px 10px;
+	border-radius: 5px;
+}
+.input-camp input {
+	border: none;
+	outline: none;
+	padding: 5px;
+	width: 100%;
+	color: #000;
+	background: none;
+	font-size: 18px;
+}
+.input-camp i {
+	font-size: 20px;
+	color: #333;
+	font-weight: 600;
+	cursor: pointer;
+}
+.flex {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.aviso {
+	display: none;
+	margin-top: 30px;
+	color: #f00;
+	font-weight: 600;
+	font-size: 20px;
+	opacity: 0;
+	transition: all 0.3s ease;
+}
+.aviso.active {
+	display: block;
+	animation-name: animeAviso;
+	animation-duration: 0.3s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+@keyframes animeAviso {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
