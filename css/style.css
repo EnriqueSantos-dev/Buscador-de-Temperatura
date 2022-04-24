@@ -9,15 +9,29 @@ body {
 	background-image: url('/assets/bg-default.jpg');
 	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
-	height: 100vh;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 0 20px;
+	padding: 20px;
+	gap: 30px;
+	min-height: 100vh;
 }
 .model {
 	display: none;
+}
+.title {
+	max-width: 600px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.8);
+	backdrop-filter: blur(2px);
+	padding: 20px;
+	border-radius: 20px;
+}
+.title h1 {
+	font-size: 23px;
 }
 .container {
 	display: flex;
