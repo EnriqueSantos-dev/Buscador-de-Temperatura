@@ -1,0 +1,2 @@
+# Buscador-de-Temperatura
+Nesse projeto no meu código eu consumo a api da https://openweathermap.org/ para pegar temperaturas em tempo real das mais de 200.000 mil cidades que eles oferencem, para isso eu precisei fazer uma requisição a essa api e para isso isso utilizei a liguagem JavaScript. Vale ressaltar que o projeto tem um design minimalista e elegante, além disso é feita uma busca em tempo de execução para atualizar o plano de fundo assim que a cidade é encontrada
